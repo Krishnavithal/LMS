@@ -131,7 +131,7 @@ function TopBar(props) {
               Learning Management System
             </Typography>
             <div />
-            <div>
+            <div style={{ flexGrow: 1 }}>
               <IconButton
                 edge="end"
                 aria-label="account of current user"
