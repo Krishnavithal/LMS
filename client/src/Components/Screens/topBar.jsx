@@ -116,11 +116,12 @@ function TopBar(props) {
 
   return (
     <>
-      <div className={classes.grow}>
+<!--       <div className={classes.grow}> -->
+      <div>
         <AppBar position="static" style={{ background: "rgb(0, 188, 212)" }}>
           <Toolbar>
             <Typography
-              className={classes.title}
+<!--               className={classes.title} -->
               variant="h6"
               noWrap
               style={{ cursor: "pointer" }}
@@ -132,8 +133,12 @@ function TopBar(props) {
             >
               Learning Management System
             </Typography>
-            <div className={classes.grow} />
-            <div className={classes.sectionDesktop}>
+            <div 
+<!--               className={classes.grow}  -->
+              />
+            <div 
+<!--               className={classes.sectionDesktop} -->
+              >
               <IconButton
                 edge="end"
                 aria-label="account of current user"
