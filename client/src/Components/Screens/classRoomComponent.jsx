@@ -35,7 +35,6 @@ class ClassRoomComponent extends React.Component {
       this.state.userType === "Student" ? this.state.userType : null;
     return (
       <Card
-<!--         className={classes.root} -->
         style={{
           alignItems: "left",
           textAlign: "left",
@@ -48,7 +47,6 @@ class ClassRoomComponent extends React.Component {
       >
         <CardActionArea>
           <CardMedia
-<!--             className={classes.media} -->
             image="/static/images/cards/contemplative-reptile.jpg"
             title="Contemplative Reptile"
           />
