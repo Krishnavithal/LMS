@@ -9,7 +9,6 @@ import Menu from "@material-ui/core/Menu";
 import { withStyles } from "@material-ui/core";
 import AccountCircle from "@material-ui/icons/AccountCircle";
 import { withRouter, useHistory } from "react-router-dom";
-import { useStyles } from "../../shared/appBarStyleService";
 import {
   Dialog,
   DialogTitle,
@@ -172,5 +171,5 @@ function TopBar(props) {
     </>
   );
 }
-export default withRouter(withStyles(useStyles)(TopBar));
+export default withRouter(TopBar);
 //export default PrimarySearchAppBar;
