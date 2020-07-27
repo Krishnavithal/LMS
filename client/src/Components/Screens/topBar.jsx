@@ -63,9 +63,9 @@ function TopBar(props) {
   const { state, dispatch } = useContext(UserContext);
   const history = useHistory();
   const classes1 = props.classes;
-  const classes = useStyles1();
-  console.log(classes);
-  console.log(classes1);
+//   const classes = useStyles1();
+//   console.log(classes);
+//   console.log(classes1);
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
   const [isLogOutClicked, setIsLogOutClicked] = React.useState(false);
