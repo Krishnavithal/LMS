@@ -9,9 +9,6 @@ const mongoose = require("mongoose");
 //mongodb+srv://Krishna:<password>@cluster0.8nge8.mongodb.net/<dbname>?retryWrites=true&w=majority
 //pass:krishna123
 app.use(bodyParser.json());
-app.get("/", (req, res) => {
-  res.json({ message: "API Working" });
-});
 
 const auth = require("./routes/auth");
 app.use("/auth", auth);
@@ -23,6 +20,13 @@ process.on("unhandledRejection", (error, promise) => {
   );
   console.log(" The error was: ", error);
 });
+if(process.env.NODE_ENV=="production"){
+    app.use(express.static('client/build'))
+    const path=require('path')
+    app.get('*',(req,res)=>{
+        res.sendFile(path.join(__dirname,'client','build','index.html'))
+    })
+}
 app.listen(PORT, () => {
   console.log("Listening at ", PORT);
 });
