@@ -14,16 +14,16 @@ class ClassRoomComponent extends React.Component {
     super(props);
     this.state = { userType: "" };
   }
-  useStyles = () => {
-    makeStyles({
-      root: {
-        maxWidth: 345,
-      },
-      media: {
-        height: 140,
-      },
-    });
-  };
+//   useStyles = () => {
+//     makeStyles({
+//       root: {
+//         maxWidth: 345,
+//       },
+//       media: {
+//         height: 140,
+//       },
+//     });
+//   };
   handleView = (path) => {
     this.props.history.push({
       pathname: path,
