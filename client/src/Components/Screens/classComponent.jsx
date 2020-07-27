@@ -110,7 +110,7 @@ class ClassComponent extends Component {
     let details = this.props.location;
     const isTeacher =
       JSON.parse(localStorage.getItem("user")).type === "teacher" ? (
-        <div className={classes.sectionDesktop}>
+        <div >
           <IconButton
             onClick={() => {
               this.setState({ editable: false });
@@ -138,10 +138,10 @@ class ClassComponent extends Component {
           maxWidth: "80vh",
         }}
       >
-        <div className={classes.grow}>
+        <div>
           <AppBar position="static">
             <Toolbar>
-              <Typography className={classes.title} variant="h6" noWrap>
+              <Typography variant="h6" noWrap>
                 {this.state.className}
               </Typography>
               <div style={{ flexGrow: 1 }} />
