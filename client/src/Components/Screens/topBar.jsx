@@ -115,7 +115,7 @@ function TopBar(props) {
 
   return (
     <>
-      <div>
+      <div style={{ flexGrow: 1 }}>
         <AppBar position="static" style={{ background: "rgb(0, 188, 212)" }}>
           <Toolbar>
             <Typography
@@ -131,7 +131,7 @@ function TopBar(props) {
               Learning Management System
             </Typography>
             <div />
-            <div style={{ flexGrow: 1 }}>
+            <div >
               <IconButton
                 edge="end"
                 aria-label="account of current user"
