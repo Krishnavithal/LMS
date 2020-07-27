@@ -8,7 +8,6 @@ import {
   TextField,
 } from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
-import { useStyles } from "../../shared/appBarStyleService";
 import EditIcon from "@material-ui/icons/Edit";
 import IconButton from "@material-ui/core/IconButton";
 import DeleteIcon from "@material-ui/icons/Delete";
@@ -238,4 +237,4 @@ class ClassComponent extends Component {
   }
 }
 
-export default withStyles(useStyles)(ClassComponent);
+export default ClassComponent;
